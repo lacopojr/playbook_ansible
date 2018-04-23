@@ -1,0 +1,10 @@
+---
+- hosts: wordpress
+  remote_user: gabriel
+  become: yes
+  roles:
+    - server
+    - php
+    - mysql
+    - wordpress
+  
